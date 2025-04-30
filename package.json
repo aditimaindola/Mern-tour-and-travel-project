@@ -1,0 +1,34 @@
+{
+    "name": "travel-and-tourism-management-system",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+      "start": "node backend/index.js",
+      "server": "cd backend && npm start",
+      "client": "cd client && npm run dev",
+      "dev": "concurrently \"npm run server\" \"npm run client\"",
+      "build": "npm install && npm install --prefix client && npm run build --prefix client",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "bcryptjs": "^2.4.3",
+      "braintree": "^3.21.0",
+      "cookie-parser": "^1.4.6",
+      "cors": "^2.8.5",
+      "dotenv": "^16.5.0",
+      "express": "^4.18.2",
+      "firebase": "^10.7.1",
+      "jsonwebtoken": "^9.0.2",
+      "mongoose": "^8.14.0",
+      "nodemon": "^3.0.2"
+    },
+    "devDependencies": {
+      "concurrently": "^9.1.2"
+    }
+  }
+  
